@@ -1,0 +1,719 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url(/image/istockphoto-1392494594-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: auto;
+    
+}
+
+
+
+.navbar{
+    width: 100%;
+    height: 75px;
+    background-color:rgba(46, 46, 226, 0.774) ;
+    overflow: auto;
+    position: fixed;
+    z-index: 70;
+    
+}
+ .navbar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 60px;
+
+}
+
+.navbar ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-right: 30px;
+    padding-right: 30px;
+}
+
+.navbar li{float: inline-end;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.navbar li:hover{
+    transition-duration: 0s;
+    color: rgba(255, 255, 255, 0.603);
+    text-decoration: underline;
+}
+
+.cap{
+    width:800px;
+    height: 500px;
+    text-align: center;
+    color: rgb(19, 20, 22);
+    margin: auto;
+    padding-top:25%;
+}
+.cap h2{
+    font-size: 50px;
+    word-spacing: 8px;
+    letter-spacing: 5px;
+}
+.cap p{
+    font-size: 30px;
+    word-spacing: 5px;
+}
+.cap button{
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.cap a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.color1{
+    background-color: rgb(81, 187, 173);
+   
+}
+.color1 .a1{color: aliceblue;}
+
+.main{
+    width: 90%;
+    background-color: lightcyan;
+    margin-left: 5%;
+    height: 400px;
+    text-align: center;
+    position: relative;
+
+    
+}
+.main h2{
+    margin-top: 50px;
+    color: black;
+    font-size: 40px;
+
+}
+.main h2::before{ position: absolute;
+    content: "";
+    height: 7px;
+    width: 200px;
+    background-color: #242424;
+    position: absolute;
+    top: 13%;
+    left: 40%;
+}
+/*.intro h2  :before{
+    content: " ";
+    height: 5px;
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    color: black;*/
+    .main button{
+        height: 40px;
+        width: 150px;
+        border: 2px black solid;
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+    }
+    .des1 {
+        width: 25%;
+        height: 250px;
+        background-color: whitesmoke;
+        margin-right: 0;
+        /*margin-top: 15%;*/
+        position: absolute;
+        top: 25%;
+        left: 0;
+        border: 2px solid black;
+        
+    }
+    .des1 p{
+        text-align:center;
+        color:slategrey;
+        /*font-weight: bold;*/
+    
+    }
+    .des1::after{
+        content: " ";
+        height: 0%;
+        width: 0%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 2s;
+        background-color: rgba(118, 118, 243, 0.329);
+        opacity: 0;
+        z-index: -1;
+    }
+    .des1:hover::after{
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+    .des1:hover{
+        z-index: 50;
+    }
+.des1:hover h3{
+    color: blue;
+    transition: 2s;
+}
+    
+.des2{
+    width: 25%;
+    height: 250px;
+    background-color:whitesmoke;
+   /* margin: auto;*/
+    position: absolute;
+    top: 25%;
+    left: 37%;
+    
+    
+    border: 2px solid black;
+    
+}
+.des2 p{
+    text-align:center;
+    color: slategrey;
+
+}
+.des2::after{
+    content: " ";
+   /* background-color: rgba(118, 118, 243, 0.329);;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    transition: 2s;
+    z-index: -1;
+    background-image: url(/image/happy-female-graduate-standing-near-260nw-687095230.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.des2:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+
+}
+.des2:hover h3{
+    color: blue;
+    transition: 2s;
+}
+.des2:hover{
+    z-index: 50;
+}
+.des3{
+    width: 25%;
+    height: 250px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    float: right;
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+.des3 p{
+    text-align:center;
+    color: slategrey;
+}
+.des3::after{
+    content: " ";
+    background-color:  rgba(118, 118, 243, 0.329);;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 2s;
+    z-index: -1;
+}
+.des3:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.des3:hover h3{
+    color: blue;
+    transition: 2s;
+}
+.des3:hover{
+    z-index: 50;
+}
+
+.team{
+    width: 90%;
+    height: 500px;
+    background-color:lightgoldenrodyellow;
+    margin-left: 5%;
+    text-align: center;
+    position: relative;
+}
+.team h2{
+    margin-top: 50px;
+    color: black;
+    font-size: 40px;
+    word-spacing:8px ;
+}
+.team h2::before{
+    content: " ";
+    width: 150px;
+    height: 7px;
+    background-color: blue;
+    position: absolute;
+    top: 8%;
+    left: 44%;
+
+}
+.team1{
+    width: 25%;
+    height: 400px;
+    background-color: lightgrey;
+    position: absolute;
+    top: 15%;
+    left: 0;
+       
+}
+.team1 ul{
+    height: 110px;
+    width: 40px;
+    font-size: 20px;
+    opacity: 0;
+    color: beige;
+    background-color: aqua;
+    list-style-type: none;
+    position: absolute;
+    top: 4%;
+    right: 8%;
+    
+}
+.team1 img{
+    height: 75%;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+.team1::after{
+    content: " ";
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 2s;
+    background-color: rgba(118, 118, 243, 0.329);
+    opacity: 0;
+    
+
+}
+.team1:hover::after{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+
+}
+.team1:hover h3{
+    color: rgb(0, 124, 128);
+    transition: 2s;
+}
+.team1:hover p{
+    color:blue;
+    transition: 2s;
+}
+.team1:hover ul{
+    opacity: 1;
+    transition: 2s;
+}
+
+.team2{
+    width: 25%;
+    height: 400px;
+    background-color: lightgrey;
+    position: absolute;
+    top: 15%;
+    left: 37%;
+
+}
+.team2 img{
+    height: 75%;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+
+}
+.team2 ul{
+    height: 110px;
+    width: 40px;
+    font-size: 20px;
+    opacity: 0;
+    color: beige;
+    background-color: aqua;
+    list-style-type: none;
+    position: absolute;
+    top: 4%;
+    right: 8%;
+  
+}
+.team2::after{
+    content: " ";
+    height: 0;
+    width: 100%;
+    background-color: rgba(118, 118, 243, 0.329);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 2s;
+
+}
+.team2:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.team2:hover h3{
+    color:  rgb(0, 124, 128);
+    transition: 2s;
+
+}
+.team2:hover p{
+    color:blue ;
+    transition: 2s;
+}
+.team2:hover ul{
+    opacity: 1;
+    transition: 2s;
+}
+
+.team3{
+    width: 25%;
+    height: 400px;
+    background-color: lightgrey;
+    position: absolute;
+    top: 15%;
+    right: 0;
+
+}
+.team3 img{
+    height: 75%;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+
+
+}
+.team3 ul{
+    height: 110px;
+    width: 40px;
+    font-size: 20px;
+    opacity: 0;
+    color: beige;
+    background-color: aqua;
+    position: absolute;
+    top: 4%;
+    right: 8%;
+    list-style-type: none;
+    
+
+}
+.team3::after{
+    content: " ";
+    height: 0;
+    width: 100%;
+    background-color: rgba(118, 118, 243, 0.329);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 2s;
+}
+.team3:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.team3:hover h3{
+    color:  rgb(0, 124, 128);
+    transition: 2s;
+
+}
+.team3:hover p{
+    color:blue ;
+    transition: 2s;
+}
+.team3:hover ul{
+    opacity: 1;
+    transition: 2s;
+}
+
+.offers{
+    width: 90%;
+    height: 600px;
+    background-color: lightgrey;
+    margin-left: 5%;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+}
+.offers h1{
+    color: black;
+    font-size: 40px;
+    word-spacing:8px ;
+    transform: translateY(40px);
+}
+
+
+.offers h1::before{
+    content: " ";
+    width: 150px;
+    height: 7px;
+    background-color: blue;
+    position: absolute;
+    top: 95%;
+    left: 44%;
+    
+}
+.section1{
+    height: 450px;
+    width: 25%;
+    border: 1px black solid;
+    background-color: rgb(245, 242, 247);
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+.section1 h2{
+    color: lightslategray;
+    padding-top: 15px;
+    font-size: 40px;
+}
+.section1 h3{
+    color: black;
+    padding-top: 25px;
+    height: 100px;
+    width: 100px;
+    border: 4px blue solid;
+    border-radius: 50%;
+    margin: auto;
+}
+.section1 p{
+    color:rgb(21, 24, 27);
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 40px;
+}
+.section1 button{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #242424;
+    border: 2px blue solid;
+}
+.section1 a{
+    text-decoration: none;
+    color: black;
+}
+.section1::after{
+    content: " ";
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 2s;
+    background-color:lightgrey;
+    opacity: 0;
+    z-index: -1;
+}
+.section1:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.section1:hover h2{
+    color: blue;
+}
+.section1:hover h3{
+    color: cadetblue;
+}
+.section1:hover a{
+    color:white;
+}
+.section1:hover button{
+    background-color: rgba(0, 0, 255, 0.315);
+}
+
+.section1:hover{
+    z-index: 55;
+}
+
+.section2{
+    height: 450px;
+    width: 25%;
+    border: 1px black solid;
+    background-color:rgb(245, 242, 247);
+    position: absolute;
+    top: 20%;
+    left: 39%;
+} 
+.section2 h2{
+    color: lightslategray;
+    padding-top: 15px;
+    font-size: 40px;
+}
+.section2 h3{
+    color: black;
+    padding-top: 25px;
+    height: 100px;
+    width: 100px;
+    border: 4px blue solid;
+    border-radius: 50%;
+    margin: auto;
+}
+.section2 p{
+    color:rgb(21, 24, 27);
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 40px;
+}
+.section2 button{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #242424;
+    border: 2px blue solid;
+}
+.section2 a{
+    text-decoration: none;
+    color: black;
+}
+.section2::after{
+    content: " ";
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 2s;
+    background-color:lightgrey;
+    opacity: 0;
+    z-index: -1;
+}
+.section2:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.section2:hover h2{
+    color: blue;
+}
+.section2:hover h3{
+    color: cadetblue;
+}
+.section2:hover a{
+    color:white;
+}
+.section2:hover button{
+    background-color: rgba(0, 0, 255, 0.315);
+}
+.section2:hover{
+    z-index: 55;
+}
+.section3{
+    height: 450px;
+    width: 25%;
+    background-color: rgb(245, 242, 247);
+    border: 1px black solid;
+    position: absolute;
+    top: 20%;
+    right: 0;
+} 
+.section3 h2{
+    color: lightslategray;
+    padding-top: 15px;
+    font-size: 40px;
+}
+.section3 h3{
+    color: black;
+    padding-top: 25px;
+    height: 100px;
+    width: 100px;
+    border: 4px blue solid;
+    border-radius: 50%;
+    margin: auto;
+}
+.section3 p{
+    color:rgb(21, 24, 27);
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 40px;
+}
+.section3 button{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #242424;
+    border: 2px blue solid;
+}
+.section3 a{
+    text-decoration: none;
+    color: black;
+}
+.section3::after{
+    content: " ";
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 2s;
+    background-color:lightgrey;
+    opacity: 0;
+    z-index: -1;
+}
+.section3:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.section3:hover h2{
+    color: blue;
+}
+.section3:hover h3{
+    color: cadetblue;
+}
+.section3:hover a{
+    color:white;
+}
+.section3:hover button{
+    background-color: rgba(0, 0, 255, 0.315);
+}
+.section3:hover{
+    z-index: 55;
+}
+
+
